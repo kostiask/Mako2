@@ -4,9 +4,9 @@ Klonowanie repozaritorium:
 git clone https://github.com/kostiask/Mako2.git && cd Mako2
 
 Co potrzebho:
-1. ol
- * ul
- * ul
+ * NodeJs
+ * Truffle
+ * Metamask
 
 ## Deployowanie smart contraktu Oracle
 1. Przejsc do katologu Oracle: cd Mako2

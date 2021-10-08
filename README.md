@@ -117,5 +117,5 @@ npm run dev
 ```
 ### Metamask
 1. W Metamasku 
-![alt text](https://www.trufflesuite.com/img/tutorials/pet-shop/metamask-networkmenu.png
+![alt](https://www.trufflesuite.com/img/tutorials/pet-shop/metamask-networkmenu.png
 )

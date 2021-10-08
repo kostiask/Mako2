@@ -15,7 +15,7 @@ cd "${HOME}" && git clone https://github.com/kostiask/Mako2.git && cd Mako2
 ```bash
 cd Oracle
 ```
-2. Uzupelnic plik truffle-config.js. Trzebo podac dane blockczaina i akaunta.
+2. Into Truffle-config.js put blockchain and account data:
 ```js
 development: {
       host: '<host blockchain>',
@@ -24,53 +24,60 @@ development: {
       from: <address account>
     }
 ```
-4. Skompilowac sc: 
+3. Compile Smart Contract: 
 ```bash
 truffle compile
 ```
-4. Zdeplijowac sc: 
+4. Deploy Smart Contract:
 ```bash
 truffle migrate
 ```
 
 ## Aplikacja js_Oracle
-1. Przejsc do katologu js_Oracle: 
+1. Go to js_Oracle directory: 
 ```bash
 cd js_Oracle
 ```
-2. Zainstalowac moduli:
+2. Install module:
 ```bash
 npm install
 ```
-3. Otworzyc plik index.js
-4. Podstawic websocket blockczaina: 
+3. In index.js put blockchain websocket address: 
 ```js
 web3 = new Web3(new Web3.providers.WebsocketProvider("<websocket>"));
 ```
-5. Podstawic address sc Oracle:
+4. In index.js put address of Oracle SC:
 ```js
 const address = "<address Oracle contract>";
 ```
-6. Zapuscic aplikacje: 
+5. Start an application: 
 ```bash
 node index.js
 ```
 
-## Deployowanie smart contraktu RDF
-1. Przejsc do katologu dapp:
+## RDF SC deployment
+1. PGo to dapp directory:
 ```bash
 cd dapp
 ```
-2. Uzupelnic plik truffle-config.js. Trzebo podac dane blockczaina i akaunta.
-3. W pliku contracts/oracleAPI.sol dodac address sc Oracle:
+2. Into truffle-config.js put blockchain and account data:
+```js
+development: {
+      host: '<host blockchain>',
+      port: <port>,
+      network_id: '*',
+      from: <address account>
+    }
+```
+4. W pliku contracts/oracleAPI.sol dodac address sc Oracle:
 ```sol
 address OracleAddress = <address Oracle contract>;
 ```
-4. Zkompilowac sc: 
+4. Compile Smart Contract: 
 ```bash
 truffle compile
 ```
-5. Zdeplijowac sc: 
+5. Deploy Smart Contract: 
 ```bash
 truffle migrate
 ```

@@ -1,8 +1,8 @@
 # Mako2
 
 1. Klonowanie repozaritorium:
-git clone link
+git clone https://github.com/kostiask/Mako2.git
 
-Przejsc do folderzu Mako2:
+2. Przejsc do folderzu Mako2:
 cd Mako2
 

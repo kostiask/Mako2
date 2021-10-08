@@ -36,7 +36,7 @@ truffle compile
 truffle migrate
 ```
 
-### Aplikacja js_Oracle
+### js_Oracle application
 1. Go to js_Oracle directory: 
 ```bash
 cd js_Oracle
@@ -59,7 +59,7 @@ node index.js
 ```
 
 ### RDF SC deployment
-1. PGo to dapp directory:
+1. Go to dapp directory:
 ```bash
 cd dapp
 ```

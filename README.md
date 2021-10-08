@@ -36,18 +36,22 @@ cd js_Oracle
   web3 = new Web3(new Web3.providers.WebsocketProvider("<websocket>"));
 ```
 4. Podstawic address sc Oracle:
-```
+```js
 const address = "<address Oracle contract>";
 ```
 5. Zapuscic aplikacje: 
-```node index.js```
+```bash
+node index.js
+```
 
 ## Deployowanie smart contraktu RDF
 1. Przejsc do katologu dapp:
-```cd dapp```
+```bash
+cd dapp
+```
 2. Uzupelnic plik truffle-config.js. Trzebo podac dane blockczaina i akaunta.
 3. W pliku contracts/oracleAPI.sol dodac address sc Oracle:
-```
+```sol
 address OracleAddress = <address Oracle contract>;
 ```
 4. Zokmpilowac sc: 

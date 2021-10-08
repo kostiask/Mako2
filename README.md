@@ -14,9 +14,9 @@ git clone https://github.com/kostiask/Mako2.git && cd Mako2
 2. Otworzyc plik index.js
 3. Podstawic websocket blockczaina: 
 ```
-  web3 = new Web3(new Web3.providers.WebsocketProvider('ws://localhost:7545'));
+  web3 = new Web3(new Web3.providers.WebsocketProvider("<websocket>"));
 ```
 4. Podstawic address sc Oracle:
 ```
-const address = "0x20b2b77F9a30E662c5A21b211DC3c9D111fe7Ca9";
+const address = "<address>";
 ```

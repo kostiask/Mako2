@@ -6,7 +6,9 @@ Co potrzebho:
  * Metamask
 
 Klonowanie repozaritorium:
+```
 git clone https://github.com/kostiask/Mako2.git && cd Mako2
+```
 
 ## Deployowanie smart contraktu Oracle
 1. Przejsc do katologu Oracle: 

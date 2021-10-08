@@ -27,7 +27,7 @@ git clone https://github.com/kostiask/Mako2.git && cd Mako2
 ```
 4. Podstawic address sc Oracle:
 ```
-const address = "<address>";
+const address = "<address Oracle>";
 ```
 5. Zapuscic aplikacje: 
 ```node index.js```

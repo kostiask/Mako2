@@ -1,9 +1,9 @@
 # Mako2
 
 Co potrzebho:
- * NodeJs
- * Truffle
- * Metamask
+ * NodeJs - https://nodejs.org/en/download/
+ * Truffle - https://www.trufflesuite.com/truffle
+ * Metamask - https://metamask.io/download.html
 
 Klonowanie repozaritorium:
 ```

@@ -5,9 +5,9 @@ Co potrzebho:
  * Truffle - https://www.trufflesuite.com/truffle
  * Metamask - https://metamask.io/download.html
 
-Klonowanie repozaritorium:
-```
-git clone https://github.com/kostiask/Mako2.git && cd Mako2
+Clone the repository to the user's home directory and go to the project directory:
+```bash
+cd "${HOME}" && git clone https://github.com/kostiask/Mako2.git && cd Mako2
 ```
 
 ## Deployowanie smart contraktu Oracle

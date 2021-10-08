@@ -1,16 +1,19 @@
 # Mako2
 
-What is needed:
+## Requirements:
  * NodeJs - https://nodejs.org/en/download/
  * Truffle - https://www.trufflesuite.com/truffle
  * Metamask - https://metamask.io/download.html
+
+
+## Usage
 
 Clone the repository to the user's home directory and go to the project directory:
 ```bash
 cd "${HOME}" && git clone https://github.com/kostiask/Mako2.git && cd Mako2
 ```
 
-## Smart contract Oracle deploy
+### Smart contract Oracle deploy
 1. Go to directory Oracle: 
 ```bash
 cd Oracle
@@ -33,7 +36,7 @@ truffle compile
 truffle migrate
 ```
 
-## Aplikacja js_Oracle
+### Aplikacja js_Oracle
 1. Go to js_Oracle directory: 
 ```bash
 cd js_Oracle
@@ -55,7 +58,7 @@ const address = "<address Oracle contract>";
 node index.js
 ```
 
-## RDF SC deployment
+### RDF SC deployment
 1. PGo to dapp directory:
 ```bash
 cd dapp
@@ -82,7 +85,7 @@ truffle compile
 truffle migrate
 ```
 
-## Client application
+### Client application
 1. Go to dapp/client/src directory:
 ```bash
 cd dapp/client/src

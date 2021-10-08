@@ -116,5 +116,5 @@ const rdf = new web3.eth.Contract(
 npm run dev
 ```
 ### Metamask
-1. W Metamasku
+1. W Metamasku podloczyc sie do odpowiedniego blockchainu.
 ![alt text](https://www.trufflesuite.com/img/tutorials/pet-shop/metamask-networkmenu.png) 

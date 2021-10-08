@@ -33,7 +33,7 @@ cd js_Oracle
 2. Otworzyc plik index.js
 3. Podstawic websocket blockczaina: 
 ```js
-  web3 = new Web3(new Web3.providers.WebsocketProvider("<websocket>"));
+web3 = new Web3(new Web3.providers.WebsocketProvider("<websocket>"));
 ```
 4. Podstawic address sc Oracle:
 ```js
@@ -55,14 +55,21 @@ cd dapp
 address OracleAddress = <address Oracle contract>;
 ```
 4. Zokmpilowac sc: 
-```truffle compile```
+```bash
+truffle compile
+```
 5. Zdeplijowac sc: 
-```truffle migrate```
+```bash
+truffle migrate
+```
 
 ## Aplikacja clijencks
-1. Przejsc do katalogu dapp/client/src: ```cd dapp/client/src```
-2. Otworzyc plik app.js i dodaj adres smart contraktu RDF:
+1. Przejsc do katalogu dapp/client/src: 
+```bash
+cd dapp/client/src
 ```
+2. Otworzyc plik app.js i dodaj adres smart contraktu RDF:
+```js
 const rdf = new web3.eth.Contract(
       data.abi,
       "<address RDF contract>"
@@ -70,4 +77,6 @@ const rdf = new web3.eth.Contract(
 ```
 3. Przejsc do katologu dapp/client
 4. Uruchomic client: 
-```npm run dev```
+```bash
+npm run dev
+```

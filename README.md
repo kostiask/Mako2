@@ -57,4 +57,5 @@ const rdf = new web3.eth.Contract(
       );
 ```
 3. Przejsc do katologu dapp/client
-4. Uruchomic client: npm run dev
+4. Uruchomic client: 
+```npm run dev```

@@ -1,6 +1,6 @@
 # Mako2
 
-Co potrzebho:
+What is needed:
  * NodeJs - https://nodejs.org/en/download/
  * Truffle - https://www.trufflesuite.com/truffle
  * Metamask - https://metamask.io/download.html
@@ -10,13 +10,21 @@ Clone the repository to the user's home directory and go to the project director
 cd "${HOME}" && git clone https://github.com/kostiask/Mako2.git && cd Mako2
 ```
 
-## Deployowanie smart contraktu Oracle
-1. Przejsc do katologu Oracle: 
+## Smart contract Oracle deploy
+1. Go to directory Oracle: 
 ```bash
 cd Oracle
 ```
 2. Uzupelnic plik truffle-config.js. Trzebo podac dane blockczaina i akaunta.
-3. Skompilowac sc: 
+```js
+development: {
+      host: '<host blockchain>',
+      port: <port>,
+      network_id: '*',
+      from: <address account>
+    }
+```
+4. Skompilowac sc: 
 ```bash
 truffle compile
 ```
@@ -88,3 +96,4 @@ const rdf = new web3.eth.Contract(
 ```bash
 npm run dev
 ```
+

@@ -69,7 +69,7 @@ development: {
       from: <address account>
     }
 ```
-4. W pliku contracts/oracleAPI.sol dodac address sc Oracle:
+4. Add Oracle SC address into contracts/oracleAPI.sol file:
 ```sol
 address OracleAddress = <address Oracle contract>;
 ```
@@ -82,24 +82,24 @@ truffle compile
 truffle migrate
 ```
 
-## Aplikacja clijencks
-1. Przejsc do katalogu dapp/client/src: 
+## Client application
+1. Go to dapp/client/src directory:
 ```bash
 cd dapp/client/src
 ```
-2. Zainstalowac moduli:
+2. Install module:
 ```bash
 npm install
 ```
-3. Otworzyc plik app.js i dodaj adres smart contraktu RDF:
+3. Open app.js file and add RDF SC address:
 ```js
 const rdf = new web3.eth.Contract(
       data.abi,
       "<address RDF contract>"
       );
 ```
-4. Przejsc do katologu dapp/client
-5. Uruchomic client: 
+4. Go to dapp/client directory.
+5. Start app: 
 ```bash
 npm run dev
 ```

@@ -3,6 +3,11 @@
 Klonowanie repozaritorium:
 git clone https://github.com/kostiask/Mako2.git && cd Mako2
 
+Co potrzebho:
+1. ol
+ * ul
+ * ul
+
 ## Deployowanie smart contraktu Oracle
 1. Przejsc do katologu Oracle: cd Mako2
 2. Uzupelnic plik truffle-config.js. Trzebo podac dane blockczaina i akaunta.
@@ -20,3 +25,4 @@ git clone https://github.com/kostiask/Mako2.git && cd Mako2
 ```
 const address = "<address>";
 ```
+5. Zapuscic aplikacje: node index.js

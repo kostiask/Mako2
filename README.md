@@ -84,6 +84,15 @@ truffle compile
 ```bash
 truffle migrate
 ```
+### Prosty server ktury zwraca graf
+1. Go to server directory:
+```bash
+cd server
+```
+2. Start server:
+```bash
+node server.js
+```
 
 ### Client application
 1. Go to dapp/client/src directory:

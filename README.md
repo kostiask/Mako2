@@ -84,7 +84,7 @@ truffle compile
 ```bash
 truffle migrate
 ```
-### Prosty server ktury zwraca graf
+### Simple server which return graf
 1. Go to server directory:
 ```bash
 cd server

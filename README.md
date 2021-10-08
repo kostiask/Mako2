@@ -37,7 +37,9 @@ const address = "<address Oracle>";
 ```cd dapp```
 2. Uzupelnic plik truffle-config.js. Trzebo podac dane blockczaina i akaunta.
 3. W pliku contracts/oracleAPI.sol dodac address sc Oracle:
-```address OracleAddress = <address Oracle>;```
+```
+address OracleAddress = <address Oracle>;
+```
 4. Zokmpilowac sc: 
 ```truffle compile```
 5. Zdeplijowac sc: 

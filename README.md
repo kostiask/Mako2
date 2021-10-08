@@ -16,7 +16,7 @@ cd "${HOME}" && git clone https://github.com/kostiask/Mako2.git && cd Mako2
 cd Oracle
 ```
 2. Uzupelnic plik truffle-config.js. Trzebo podac dane blockczaina i akaunta.
-3. Zokmpilowac sc: 
+3. Skompilowac sc: 
 ```bash
 truffle compile
 ```
@@ -30,16 +30,20 @@ truffle migrate
 ```bash
 cd js_Oracle
 ```
-2. Otworzyc plik index.js
-3. Podstawic websocket blockczaina: 
+2. Zainstalowac moduli:
+```bash
+npm install
+```
+3. Otworzyc plik index.js
+4. Podstawic websocket blockczaina: 
 ```js
 web3 = new Web3(new Web3.providers.WebsocketProvider("<websocket>"));
 ```
-4. Podstawic address sc Oracle:
+5. Podstawic address sc Oracle:
 ```js
 const address = "<address Oracle contract>";
 ```
-5. Zapuscic aplikacje: 
+6. Zapuscic aplikacje: 
 ```bash
 node index.js
 ```
@@ -54,7 +58,7 @@ cd dapp
 ```sol
 address OracleAddress = <address Oracle contract>;
 ```
-4. Zokmpilowac sc: 
+4. Zkompilowac sc: 
 ```bash
 truffle compile
 ```
@@ -68,15 +72,19 @@ truffle migrate
 ```bash
 cd dapp/client/src
 ```
-2. Otworzyc plik app.js i dodaj adres smart contraktu RDF:
+2. Zainstalowac moduli:
+```bash
+npm install
+```
+3. Otworzyc plik app.js i dodaj adres smart contraktu RDF:
 ```js
 const rdf = new web3.eth.Contract(
       data.abi,
       "<address RDF contract>"
       );
 ```
-3. Przejsc do katologu dapp/client
-4. Uruchomic client: 
+4. Przejsc do katologu dapp/client
+5. Uruchomic client: 
 ```bash
 npm run dev
 ```

@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0
 pragma solidity >=0.4.22 <0.9.0;
 
 abstract contract IOracle{
@@ -7,7 +8,7 @@ abstract contract IOracle{
 
 contract OracleAPI{
 
-    address OracleAddress = 0xc9f4e7aACe3314017dFF14455E17e2B28DBeEc2E;
+    address OracleAddress = 0xB7A6FAA6726099c32D81aDf845F15d2285570664;
 
     IOracle oracle = IOracle(OracleAddress);
 

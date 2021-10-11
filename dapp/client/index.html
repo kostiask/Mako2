@@ -1,86 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>RDF test</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <link href="src/css/app.css" rel="stylesheet">
 
-    <script type="text/javascript" src="node_modules/web3/dist/web3.min.js"></script>
-    <script type="text/javascript" src="node_modules/truffle-contract/dist/truffle-contract.min.js"></script>
+<head>
+  <meta charset="utf-8">
+  <title>RDF test</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link href="src/css/app.css" rel="stylesheet">
 
-    <style>
-      #name{
-        background-color: darkorange; 
-        width: 100%; 
-        height: 100px;
-        display: flex;
-        justify-content: center;
-      }
-      #name-text{
-        margin-top: revert;
-      }
-      #amount{
-        margin-left: 40px;
-        /*margin-top: 50px;*/
-      }
-      #button_load_new{
-        height: fit-content;
-        display: flex;
+  <script type="text/javascript" src="node_modules/web3/dist/web3.min.js"></script>
+  <script type="text/javascript" src="node_modules/truffle-contract/dist/truffle-contract.min.js"></script>
 
-      }
-      #cont{
-        display:flex; 
-        justify-content:center;
-      }
-      #window{
-        display: none;
-        width: 600px;
-        height: 180px;
-        /*background-color: black;*/
-        position: absolute;
-        margin-top: 200px;
-        /*margin-left: 450px;*/
-        border: 1px solid darkorange;
-       /* padding-top: 10px;
+  <style>
+    #name {
+      background-color: darkorange;
+      width: 100%;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+    }
+
+    #name-text {
+      margin-top: revert;
+    }
+
+    #amount {
+      margin-left: 40px;
+      /*margin-top: 50px;*/
+    }
+
+    #button_load_new {
+      height: fit-content;
+      display: flex;
+
+    }
+
+    #cont {
+      display: flex;
+      justify-content: center;
+    }
+
+    #cont2 {
+      display: flex;
+      justify-content: center;
+    }
+
+    #window {
+      display: none;
+      width: 600px;
+      height: 180px;
+      /*background-color: black;*/
+      position: absolute;
+      margin-top: 200px;
+      /*margin-left: 450px;*/
+      border: 1px solid darkorange;
+      /* padding-top: 10px;
         padding-left: 20px;*/
-        background-color: white;
+      background-color: white;
 
-      }
-      #background{
-        display: none;
-      }
-      #szablon{
-        width: 800px;
-        height: 60px;
-        margin-top: 10px;
-        margin-left: 200px;
-        /*background-color: darkorange;*/
-        border-bottom: 1px solid black;
-      }
-    </style>
+    }
+
+    #window2 {
+      display: none;
+      width: 1000px;
+      height: 550px;
+      /*background-color: black;*/
+      position: absolute;
+      margin-top: 200px;
+      /*margin-left: 450px;*/
+      border: 1px solid darkorange;
+      /* padding-top: 10px;
+        padding-left: 20px;*/
+      background-color: white;
+
+    }
+
+    #background {
+      display: none;
+    }
+
+    #szablon {
+      width: 900px;
+      height: 80px;
+      margin-top: 10px;
+      margin-left: 200px;
+      /*background-color: darkorange;*/
+      border-bottom: 1px solid black;
+    }
+  </style>
 
 
-  </head>
-  <body>  
+</head>
 
-    <div id="background" style="background-color: black; width: 100%; height: 100%; position: absolute; opacity: 0.6;">
-    </div>
+<body>
 
-    <div id="cont">   
-      
-       <div id="window">
+  <div id="background" style="background-color: black; width: 100%; height: 100%; position: absolute; opacity: 0.6;">
+  </div>
+
+  <div id="cont">
+
+    <div id="window">
 
       <div style="display: flex; justify-content: center;">
         <h3>Upload new graph</h4>
       </div>
 
-      
+
       <div style="padding-left: 20px; display: flex;">
         <h4 style="margin-right: 10px;">Link</h4>
         <input id="adres" type="text">
@@ -89,142 +118,274 @@
       <div style="padding-right: 20px; display: flex; justify-content: end; margin-top: 20px;">
         <button id="load">Upload</button>
       </div>
+    </div>
+  </div>
+
+  <div id="cont2">
+
+    <div id="window2">
+
+      <div style="display: flex; justify-content: center;">
+        <h3>Upload graph</h4>
+      </div>
+
+
+      <div style="display: flex; justify-content: center;">
+        <!-- <h4 style="margin-right: 10px;">Link</h4> -->
+        <!-- <input id="adres" type="text"> -->
+        <!-- <input type="textarea" name="" value="" style="width: 90%; height:400px"> -->
+        <textarea id="graf_for_check" name="" rows="" cols="" style="width: 90%; height:400px">
+        </textarea>
+      </div>
+
+      <div style="padding-right: 20px; display: flex; justify-content: end; margin-top: 20px;">
+        <button id="upload_for_check">Upload</button>
       </div>
     </div>
-   
-    
+  </div>
 
-    <div id="main_content">
-      
-      <div id="name">
-        <h1 id="name-text">Test Dapp</h1>
+
+
+  <div id="main_content">
+
+    <div id="name">
+      <h1 id="name-text">Test Dapp</h1>
+    </div>
+
+
+    <div id="all">
+
+      <div style=" margin-top: 50px;margin-left: 40px;">
+        <button id="button_load_new">Upload new graph</button>
+        <!-- <button id="check">Check</button> -->
       </div>
 
-
-      <div id="all">
-        
-        <div style=" margin-top: 50px;margin-left: 40px;">
-          <button id="button_load_new">Upload new graph</button>
-        </div>
-
-        <div id="amount">
-          <h3>Number of graphs: <span id="number_of_graphs"></span></h3>
-        </div>
-
-        <table id="producttable">
-          <tbody id="table_of_graph">
-          </tbody>
-        </table>
-
+      <div id="amount">
+        <h3>Number of graphs: <span id="number_of_graphs"></span></h3>
       </div>
 
+      <table id="producttable">
+        <tbody id="table_of_graph">
+        </tbody>
+      </table>
 
-      <div id="graph" style="display:none;">
-        <button id="wroc" style="margin-left: 10px; margin-top: 10px;">Go back to main page</button>
-        <div>
-          <h3 style="margin-left:30px">Graph with indicator <span id="id_grafu"></span></h3>
-        </div>
-        <div id="text_graph"></div>
+    </div>
 
-         <table id="" style="margin-left: 100px;">
-          <tr style="font-size: 18px;">
-            <td>#</td>
-            <td>Subject</td>
-            <td>Predicate</td>
-            <td>Object</td>
-          </tr>
-            <tbody id="table_of_triplets">
-            </tbody>
-        </table>
 
+    <div id="graph" style="display:none;">
+      <button id="wroc" style="margin-left: 10px; margin-top: 10px;">Go back to main page</button>
+      <div>
+        <h3 style="margin-left:30px">Graph with indicator <span id="id_grafu"></span></h3>
       </div>
+      <div id="text_graph"></div>
 
-      <div id="graph_edit" style="display:none;">
-        <button id="wroc_edit" style="margin-left: 10px; margin-top: 10px;">Go back to main page</button> 
-        
-        <div>
-          <h3 style="margin-left:30px">Editing a graph with an indicator <span id="id_grafu_edit"></span></h3>
-        </div>
-        <div id="text_graph_edit"></div>
-
-         <table id="" style="margin-left: 100px;">
-          <tr style="font-size: 18px;">
-            <td>#</td>
-            <td>Subject</td>
-            <td>Predicate</td>
-            <td>Object</td>
-          </tr>
-            <tbody id="table_of_triplets_edit">
-      
-            </tbody>
-        </table>
-        
-        <div style="display:flex; justify-content: end; margin-top: 40px; margin-bottom: 40px;">
-            <button id="add_triplet" style="margin-right: 40px;">Add triplet</button> 
-            <button id="save_edit_graph" style="margin-right: 40px;">Upload</button> 
-        </div>
-        
-
-      </div>
-
-     
-
-      <template id="triplet">
-        <tr>
-          <td><p style="width:50px"></p></td>
-          <td><p style="width:400px; margin-right:10px; border-bottom: 1px solid black;"></p></td>
-          <td><p style="width:400px; margin-right:10px; border-bottom: 1px solid black;"></p></td>
-          <td><p style="width:400px; margin-right:10px; border-bottom: 1px solid black;"></p></td>
+      <table id="" style="margin-left: 100px;">
+        <tr style="font-size: 18px;">
+          <td>#</td>
+          <td>Subject</td>
+          <td>Predicate</td>
+          <td>Object</td>
         </tr>
-      </template>
+        <tbody id="table_of_triplets">
+        </tbody>
+      </table>
 
-      <template id="triplet_edit">
-        
-        <tr class="new_triplet">
-          <td><p style="width:50px"></p></td>
-          <td><input type="text" name="" style="width:400px; margin-right:10px;"></td>
-          <td><input type="text" name="" style="width:400px; margin-right:10px;"></td>
-          <td><input type="text" name="" style="width:400px; margin-right:10px;"></td>
-          <!-- <td>
+    </div>
+
+    <div id="graph_check" style="display:none;">
+      <button id="wroc3" style="margin-left: 10px; margin-top: 10px;">Go back to main page</button>
+
+      <div id="now_check" style="display:none; margin-left: 10px; margin-left: 100px; margin-top: 50px;">
+        <p style="display:inline;">Compare graphs </p>
+        <button id="check" type="button" name="button" style="display:inline; margin-left: 10px;">CHECK</button>
+      </div>
+
+      <div id="result_check" style="display:none; width:80%; margin-left: 10%; margin-right:10%">
+        <h3>Resultat: </h3>
+        <p id="kon"><span id="ile_t"></span> triplets are the same as in graph with id <span id="id_main_graph"></span></p>
+        <!-- <tbody id="result_text">
+        </tbody> -->
+        <p id="result_text"></p>
+      </div>
+
+      <!-- <template id="result_check_text">
+        <tr>
+          <td>
+            <p></p>
+          </td>
+        </tr>
+      </template> -->
+
+
+      <div id="" style="display:flex; width: 80%; margin-left: 10%; margin-right: 10%;">
+
+        <div style="width:50%;">
+          <h3 style="">1 Graph</h3>
+          <p>Id: <span id="id_grafu_check"></span></p>
+          <p>Number of triplets: <span id="numer_of_triplet"></span></p>
+          <table id="" style="margin-left: 10px;">
+            <tbody id="table_of_triplets_check_graf1">
+            </tbody>
+          </table>
+        </div>
+
+        <div style="width:50%;">
+          <h3 style="">2 Graph</h3>
+          <br>
+          <p>Number of triplets:<span id="number_of_triplet2"></span></p>
+          <!-- <input type="text" name="" style="width:400px; margin-right:10px;"> -->
+          <table id="" style="margin-left: 10px;">
+            <tbody id="table_of_triplets_check_graf2">
+            </tbody>
+          </table>
+          <button id="upload_graf_check" type="button" name="button">Upload graph</button>
+
+        </div>
+
+      </div>
+
+
+
+      <div id="text_graph"></div>
+      <!-- <div id="">
+          <p>Graf o indyfikatorze <span id=""></span></p>
+        </div> -->
+      <!-- <div id="" style="width:50%; display:inline-block;">
+          <table id="" style="margin-left: 10px;">
+            <tr style="font-size: 14px;">
+              <td>#</td>
+              <td>Subject</td>
+              <td>Predicate</td>
+              <td>Object</td>
+            </tr>
+              <tbody id="table_of_triplets_check">
+              </tbody>
+          </table>
+        </div>
+        <div id="" style="width:50%; display: inline-block;">
+          <table id="" style="margin-left: 10px;">
+            <tr style="font-size: 14px;">
+              <td>#</td>
+              <td>Subject</td>
+              <td>Predicate</td>
+              <td>Object</td>
+            </tr>
+              <tbody id="table_of_triplets_check">
+              </tbody>
+          </table>
+        </div> -->
+
+
+    </div>
+
+    <div id="graph_edit" style="display:none;">
+      <button id="wroc_edit" style="margin-left: 10px; margin-top: 10px;">Go back to main page</button>
+
+      <div>
+        <h3 style="margin-left:30px">Editing a graph with an indicator <span id="id_grafu_edit"></span></h3>
+      </div>
+      <div id="text_graph_edit"></div>
+
+      <table id="" style="margin-left: 100px;">
+        <tr style="font-size: 18px;">
+          <td>#</td>
+          <td>Subject</td>
+          <td>Predicate</td>
+          <td>Object</td>
+        </tr>
+        <tbody id="table_of_triplets_edit">
+
+        </tbody>
+      </table>
+
+      <div style="display:flex; justify-content: end; margin-top: 40px; margin-bottom: 40px;">
+        <button id="add_triplet" style="margin-right: 40px;">Add triplet</button>
+        <button id="save_edit_graph" style="margin-right: 40px;">Upload</button>
+      </div>
+
+
+    </div>
+
+    <template id="triplet">
+      <tr>
+        <td>
+          <p style="width:50px"></p>
+        </td>
+        <td>
+          <p style="width:400px; margin-right:10px; border-bottom: 1px solid black;"></p>
+        </td>
+        <td>
+          <p style="width:400px; margin-right:10px; border-bottom: 1px solid black;"></p>
+        </td>
+        <td>
+          <p style="width:400px; margin-right:10px; border-bottom: 1px solid black;"></p>
+        </td>
+      </tr>
+    </template>
+
+    <template id="triplet_check">
+      <tr>
+        <td>
+          <p style="width:10%x"></p>
+        </td>
+        <td>
+          <p style="width:90%; margin-right:10px; border-bottom: 1px solid black;"></p>
+        </td>
+      </tr>
+    </template>
+
+    <template id="triplet_edit">
+
+      <tr class="new_triplet">
+        <td>
+          <p style="width:50px"></p>
+        </td>
+        <td><input type="text" name="" style="width:400px; margin-right:10px;"></td>
+        <td><input type="text" name="" style="width:400px; margin-right:10px;"></td>
+        <td><input type="text" name="" style="width:400px; margin-right:10px;"></td>
+        <!-- <td>
           <div class="new_triplet" style="display:flex;">
-            
-            
+
+
             <input type="text" name="" style="width:400px;margin-right:10px;">
             <input type="text" name="" style="width:400px;margin-right:10px;">
             <p></p>
           </div>
         </td> -->
-        </tr>
-      </template>
+      </tr>
+    </template>
+
+  </div>
 
 
-    </div>
 
-    
-
-<template id="productrow">
-  <tr>
-    <div id="szablon" style="display:flex;">
-      <div style="width:30%">
+  <template id="productrow">
+    <tr>
+      <div id="szablon" style="display:flex;">
+        <div style="width:50%">
           <p>Id: <span class="id_graf"></span></p>
+          <p>Owner: <span class="owner" style="color:green;"></span></p>
+          <p>Date: <span class="date"></span></p>
+        </div>
+        <div style="width: 60%; display: flex; justify-content:end;">
+          <button class="button_1" style="width: auto; height: fit-content; margin-right: 20px;">Look</button>
+          <button class="button_2" style="width: auto; height: fit-content; margin-right: 20px;">Edit</button>
+          <button class="button_3" style="width: auto; height: fit-content">Check</button>
+          <!-- <button id="button_3"></button> -->
+        </div>
       </div>
-      <div style="width: 60%; display: flex; justify-content:end;">
-        <button class="button_1" style="width: auto; height: fit-content; margin-right: 20px;">Look</button>
-        <button class="button_2" style="width: auto; height: fit-content">Edit</button>
-        <!-- <button id="button_3"></button> -->
-      </div>
-    </div>
-    <!-- <td class="record"></td>
+      <!-- <td class="record"></td>
     <td></td> -->
-  </tr>
-</template>
-    
+    </tr>
+  </template>
 
-    
-    
-   
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="src/app.js"></script>
-    <script type="text/javascript" src="src/utils.js"></script>
-  </body>
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="src/app.js"></script>
+  <script type="text/javascript" src="src/utils.js"></script>
+</body>
+
 </html>

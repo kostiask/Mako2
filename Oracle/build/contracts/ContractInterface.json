@@ -22,9 +22,9 @@
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "pragma solidity >=0.4.21 <0.6.0;\n\ncontract ContractInterface {\n    function __callback(string memory _result) public;\n} \n\ncontract Oracle {\n    \n    event NewRequest(address _adr, uint id, string urlToQuery, string attributeToFetch);\n    event UpdatedRequest (uint id, string urlToQuery, string attributeToFetch, string agreedValue);\n\n    struct Request {\n        uint id;\n        address addressSmartContract;\n        string urlToQuery;\n        string attributeToFetch;\n        string agreedValue;\n    }\n\n    Request[] requests;\n    uint currentId = 0;\n\n    function createRequest(string memory _urlToQuery, string memory _attributeToFetch) public {\n        uint length = requests.push(Request(currentId, msg.sender,_urlToQuery, _attributeToFetch, \"\"));\n        Request storage r = requests[length - 1];\n        \n        emit NewRequest (msg.sender, currentId, _urlToQuery, _attributeToFetch);\n\n        currentId++;\n    }\n\n    function updateRequest (uint _id, string memory _valueRetrieved) public {\n\n        Request storage currRequest = requests[_id];\n\n        ContractInterface contractInterface = ContractInterface(currRequest.addressSmartContract);\n\n        currRequest.agreedValue = _valueRetrieved;\n        emit UpdatedRequest (currRequest.id, currRequest.urlToQuery, currRequest.attributeToFetch, currRequest.agreedValue);\n\n        contractInterface.__callback(_valueRetrieved);\n\n    }\n\n}",
-  "sourcePath": "/home/kostia/Projects/Ethereum/Rdf-2/Oracle/contracts/Oracle.sol",
+  "sourcePath": "/home/kostia/Projects/Mako2/Mako2/Oracle/contracts/Oracle.sol",
   "ast": {
-    "absolutePath": "/home/kostia/Projects/Ethereum/Rdf-2/Oracle/contracts/Oracle.sol",
+    "absolutePath": "/home/kostia/Projects/Mako2/Mako2/Oracle/contracts/Oracle.sol",
     "exportedSymbols": {
       "ContractInterface": [
         40
@@ -1763,7 +1763,7 @@
   },
   "legacyAST": {
     "attributes": {
-      "absolutePath": "/home/kostia/Projects/Ethereum/Rdf-2/Oracle/contracts/Oracle.sol",
+      "absolutePath": "/home/kostia/Projects/Mako2/Mako2/Oracle/contracts/Oracle.sol",
       "exportedSymbols": {
         "ContractInterface": [
           40
@@ -3637,7 +3637,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.1",
-  "updatedAt": "2021-09-16T07:55:47.027Z",
+  "updatedAt": "2021-10-10T12:33:38.853Z",
   "devdoc": {
     "methods": {}
   },

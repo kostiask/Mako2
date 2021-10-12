@@ -81,41 +81,38 @@ npm install
 ```js
 web3 = new Web3(new Web3.providers.WebsocketProvider('<blockchain-websocket>'));
 ```
-10. In [index.js](https://github.com/kostiask/Mako2/blob/ba130171d9b289831d5abf177dad010e3ba3a1ad/js_Oracle/index.js#L5) put private key for signer transactions:
+10. In [index.js](https://github.com/kostiask/Mako2/blob/ba130171d9b289831d5abf177dad010e3ba3a1ad/js_Oracle/index.js#L5) put private account key for signing transactions:
 ```js
 const privateKey = "<private-key-account>";
 ```
-5. Start an application: 
+11. Start an application: 
 ```bash
 node index.js
 ```
-
-### RDF SC deployment
-1. Go to dapp directory:
+12. Go to dapp directory in a new terminal window:
 ```bash
 cd dapp
 ```
-2. Into truffle-config.js put blockchain and account data:
-```js
-development: {
-      host: '<host blockchain>',
-      port: <port>,
-      network_id: '*',
-      from: <address account>
-    }
+13. Install module:
+```bash
+npm install
 ```
-4. Add Oracle SC address into contracts/oracleAPI.sol file:
-```sol
-address OracleAddress = <address Oracle contract>;
-```
-4. Compile Smart Contract: 
+14. Follow step 2 from the instructions for the file [truffle-config.js](https://github.com/kostiask/Mako2/blob/b5fa28dca04603b9058bb201b86c0f2afc8dfba4/dapp/truffle-config.js).
+      
+15. Compile Smart Contracts: 
 ```bash
 truffle compile
 ```
-5. Deploy Smart Contract: 
+16. Deploy Smart Contracts:
 ```bash
 truffle migrate
 ```
+If you using Besu: 
+```bash
+truffle migrate --network besuWallet
+```
+Po wykonaniu polecenia w terminale pojawi sie address nowego contractu Oraclu:
+![alt text](https://github.com/kostiask/Mako2/blob/master/img/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0-20211012134429-811x292.png?raw=true) 
 ### Simple server which return graph
 1. Go to server directory:
 ```bash

@@ -45,11 +45,11 @@ cd js_Oracle
 ```bash
 npm install
 ```
-3. In index.js put blockchain websocket address: 
+3. In [index.js] put blockchain websocket address: 
 ```js
 web3 = new Web3(new Web3.providers.WebsocketProvider("<websocket>"));
 ```
-4. In index.js put address of Oracle SC:
+4. In [index.js](./js_Oracle/index.js#L100) put address of Oracle SC:
 ```js
 const address = "<address Oracle contract>";
 ```

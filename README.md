@@ -58,25 +58,32 @@ If you using Besu:
 ```bash
 truffle migrate --network besuWallet
 ```
-In Metamask connect to proper blockchain network.
+Po wykonaniu polecenia w terminale pojawi sie address nowego contractu Oraclu:
 ![alt text](https://github.com/kostiask/Mako2/blob/master/img/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0-20211012134429-811x292.png?raw=true) 
 
-### js_Oracle application
-1. Go to js_Oracle directory: 
-```bash
-cd js_Oracle
+6. Address z punktu 5 trzebo umiescic w pliku [js_Oracle/index.js](https://github.com/kostiask/Mako2/blob/ba130171d9b289831d5abf177dad010e3ba3a1ad/js_Oracle/index.js#L100):
+```js
+const addressOracle = "<address-Oracle-contract>";
 ```
-2. Install module:
+i w pliku [dapp/contracts/oracleAPI.sol](https://github.com/kostiask/Mako2/blob/ba130171d9b289831d5abf177dad010e3ba3a1ad/dapp/contracts/oracleAPI.sol#L11):
+```sol
+address OracleAddress = <address-Oracle-contract>;
+```
+7. Go to directory js_Oracle:
+```bash
+cd Oracle
+```
+8. Install module:
 ```bash
 npm install
 ```
-3. In [index.js] put blockchain websocket address: 
+9. In [index.js](https://github.com/kostiask/Mako2/blob/ba130171d9b289831d5abf177dad010e3ba3a1ad/js_Oracle/index.js#L147) put blockchain websocket address: 
 ```js
-web3 = new Web3(new Web3.providers.WebsocketProvider("<websocket>"));
+web3 = new Web3(new Web3.providers.WebsocketProvider('<blockchain-websocket>'));
 ```
-4. In [index.js](./js_Oracle/index.js#L100) put address of Oracle SC:
+10. In [index.js](https://github.com/kostiask/Mako2/blob/ba130171d9b289831d5abf177dad010e3ba3a1ad/js_Oracle/index.js#L5) put private key for signer transactions:
 ```js
-const address = "<address Oracle contract>";
+const privateKey = "<private-key-account>";
 ```
 5. Start an application: 
 ```bash

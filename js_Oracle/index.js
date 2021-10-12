@@ -2,8 +2,7 @@ import Web3 from "web3";
 import Net from "net";
 import request from "request";
 
-var counter = 0;
-var server = Net.createServer().listen();
+const privateKey = "0xae6ae8e5ccbfb04590405997ee2d52d2b330726137b875053c36d94e974d162f";
 
 const abi = [
     {
@@ -97,13 +96,15 @@ const abi = [
       "type": "function"
     }
   ];
-const address = "0xB7A6FAA6726099c32D81aDf845F15d2285570664";
+
+const addressOracle = "0xb9A219631Aed55eBC3D998f17C3840B7eC39C0cc";
+
+var server = Net.createServer().listen();
 var web3;
 var contract;
 
-
-
 initWeb3();
+initDefaultAccount();
 initContract();
 
 contract.events.NewRequest({})
@@ -118,15 +119,7 @@ contract.events.NewRequest({})
     else {
       print('Status code '+ response.statusCode);
       print("Response: " + body);
-
-      web3.eth.getAccounts(function(error, accounts){
-        if (error) {
-          console.log(error);
-        }
-        var account = accounts[0];
-        contract.methods.updateRequest(ID,body).send({from: account,gas: 17000000000});
-      });
-
+      contract.methods.updateRequest(ID,body).send({from: web3.eth.defaultAccount, gas: 17000000000});
     }
   });
 
@@ -139,28 +132,27 @@ contract.events.UpdatedRequest({})
 })
 .on('error', console.error);
 
-
 function initContract(){
-    print("Inicjalizacja contracta");
+    print("Smart contract Oracle initialization");
     try{
-        contract = new web3.eth.Contract(abi,address);
-        print("Inicjalizacja powiodla sie super");
-
-
-
+        contract = new web3.eth.Contract(abi,addressOracle);
+        print("Address Oracle - " + addressOracle);
     } catch(err){
         print(err);
     }
-
-
 }
 
-
 function initWeb3(){
-    print("Inicjalizacja Web3");
-    web3 = new Web3(new Web3.providers.WebsocketProvider('ws://localhost:7545'));
-    print("Host - " + web3.currentProvider.host);
+    print("Web3 initialization");
+    web3 = new Web3(new Web3.providers.WebsocketProvider('ws://localhost:8546'));
+    print("WebSocket - " + web3.currentProvider.url);
+}
 
+function initDefaultAccount(){
+  const account = web3.eth.accounts.privateKeyToAccount(privateKey);
+  web3.eth.accounts.wallet.add(account);
+  web3.eth.defaultAccount = account.address;
+  print("Default signing account - " + account.address);
 }
 
 function print(_str){

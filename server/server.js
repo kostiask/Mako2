@@ -88,156 +88,156 @@ const str = '<http://geo.org/places/NP http://www.w3.org/1999/02/22-rdf-syntax-n
 '<http://geo.org/places/LB http://www.w3.org/2000/01/rdf-schema#label "Lebanon" .>' +
 '<http://geo.org/places/LB http://schema.org/containedInPlace http://geo.org/places/Asia .>' +
 '<http://geo.org/places/HU http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
-'<http://geo.org/places/HU http://www.w3.org/2000/01/rdf-schema#label "Hungary" .>' +
-'<http://geo.org/places/HU http://schema.org/containedInPlace http://geo.org/places/Europe .>' +
-'<http://geo.org/places/CH http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
-'<http://geo.org/places/CH http://www.w3.org/2000/01/rdf-schema#label "Switzerland" .>' +
-'<http://geo.org/places/CH http://schema.org/containedInPlace http://geo.org/places/Europe .>' +
-'<http://geo.org/places/BR http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
-'<http://geo.org/places/BR http://www.w3.org/2000/01/rdf-schema#label "Brazil" .>' +
-'<http://geo.org/places/BR http://schema.org/containedInPlace http://geo.org/places/SouthAmerica .>' +
-'<http://geo.org/places/UY http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
-'<http://geo.org/places/UY http://www.w3.org/2000/01/rdf-schema#label "Uruguay" .>' +
-'<http://geo.org/places/UY http://schema.org/containedInPlace http://geo.org/places/SouthAmerica .>' +
-'<http://geo.org/places/AG http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
-'<http://geo.org/places/AG http://www.w3.org/2000/01/rdf-schema#label "Antigua and Barbuda" .>' +
-'<http://geo.org/places/AG http://schema.org/containedInPlace http://geo.org/places/NorthAmerica .>' +
-'<http://geo.org/places/TN http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
-'<http://geo.org/places/TN http://www.w3.org/2000/01/rdf-schema#label "Tunisia" .>' +
-'<http://geo.org/places/TN http://schema.org/containedInPlace http://geo.org/places/Africa .>' +
-'<http://geo.org/places/SX http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
-'<http://geo.org/places/SX http://www.w3.org/2000/01/rdf-schema#label "Sint Maarten" .>' +
-'<http://geo.org/places/SX http://schema.org/containedInPlace http://geo.org/places/NorthAmerica .>' +
-'<http://geo.org/places/SC http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
-'<http://geo.org/places/SC http://www.w3.org/2000/01/rdf-schema#label "Seychelles" .>' +
-'<http://geo.org/places/SC http://schema.org/containedInPlace http://geo.org/places/Africa .>' +
-'<http://geo.org/places/PL http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
-'<http://geo.org/places/PL http://www.w3.org/2000/01/rdf-schema#label "Poland" .>' +
-'<http://geo.org/places/PL http://schema.org/containedInPlace http://geo.org/places/Europe .>' +
-'<http://geo.org/places/MU http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
-'<http://geo.org/places/MU http://www.w3.org/2000/01/rdf-schema#label "Mauritius" .>' +
-'<http://geo.org/places/MU http://schema.org/containedInPlace http://geo.org/places/Africa .>' +
-'<http://geo.org/places/IS http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
-'<http://geo.org/places/IS http://www.w3.org/2000/01/rdf-schema#label "Iceland" .>' +
-'<http://geo.org/places/IS http://schema.org/containedInPlace http://geo.org/places/Europe .>' +
-'<http://geo.org/places/GR http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
-'<http://geo.org/places/GR http://www.w3.org/2000/01/rdf-schema#label "Greece" .>' +
-'<http://geo.org/places/GR http://schema.org/containedInPlace http://geo.org/places/Europe .>' +
-'<http://geo.org/places/BZ http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
-'<http://geo.org/places/BZ http://www.w3.org/2000/01/rdf-schema#label "Belize" .>' +
-'<http://geo.org/places/BZ http://schema.org/containedInPlace http://geo.org/places/NorthAmerica .>' +
-'<http://geo.org/places/BE http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
-'<http://geo.org/places/BE http://www.w3.org/2000/01/rdf-schema#label "Belgium" .>' +
-'<http://geo.org/places/BE http://schema.org/containedInPlace http://geo.org/places/Europe .>' +
-'<http://geo.org/places/AO http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
-'<http://geo.org/places/AO http://www.w3.org/2000/01/rdf-schema#label "Angola" .>' +
-'<http://geo.org/places/AO http://schema.org/containedInPlace http://geo.org/places/Africa .>' +
-'<http://geo.org/places/TV http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
-'<http://geo.org/places/TV http://www.w3.org/2000/01/rdf-schema#label "Tuvalu" .>' +
-'<http://geo.org/places/TV http://schema.org/containedInPlace http://geo.org/places/Oceania .>' +
-'<http://geo.org/places/SK http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
-'<http://geo.org/places/SK http://www.w3.org/2000/01/rdf-schema#label "Slovakia" .>' +
-'<http://geo.org/places/SK http://schema.org/containedInPlace http://geo.org/places/Europe .>' +
-'<http://geo.org/places/RU http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
-'<http://geo.org/places/RU http://www.w3.org/2000/01/rdf-schema#label "Russia" .>' +
-'<http://geo.org/places/RU http://schema.org/containedInPlace http://geo.org/places/Europe .>' +
-'<http://geo.org/places/PT http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
-'<http://geo.org/places/PT http://www.w3.org/2000/01/rdf-schema#label "Portugal" .>' +
-'<http://geo.org/places/PT http://schema.org/containedInPlace http://geo.org/places/Europe .>' +
-'<http://geo.org/places/MH http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
-'<http://geo.org/places/MH http://www.w3.org/2000/01/rdf-schema#label "Marshall Islands" .>' +
-'<http://geo.org/places/MH http://schema.org/containedInPlace http://geo.org/places/Oceania .>' +
-'<http://geo.org/places/LR http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
-'<http://geo.org/places/LR http://www.w3.org/2000/01/rdf-schema#label "Liberia" .>' +
-'<http://geo.org/places/LR http://schema.org/containedInPlace http://geo.org/places/Africa .>' +
-'<http://geo.org/places/KG http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
-'<http://geo.org/places/KG http://www.w3.org/2000/01/rdf-schema#label "Kyrgyzstan" .>' +
-'<http://geo.org/places/KG http://schema.org/containedInPlace http://geo.org/places/Asia .>' +
-'<http://geo.org/places/GE http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
-'<http://geo.org/places/GE http://www.w3.org/2000/01/rdf-schema#label "Georgia" .>' +
-'<http://geo.org/places/GE http://schema.org/containedInPlace http://geo.org/places/Asia .>' +
-'<http://geo.org/places/FO http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
-'<http://geo.org/places/FO http://www.w3.org/2000/01/rdf-schema#label "Faroe Islands" .>' +
-'<http://geo.org/places/FO http://schema.org/containedInPlace http://geo.org/places/Europe .>' +
-'<http://geo.org/places/XK http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
-'<http://geo.org/places/XK http://www.w3.org/2000/01/rdf-schema#label "Kosovo" .>' +
-'<http://geo.org/places/XK http://schema.org/containedInPlace http://geo.org/places/Europe .>' +
-'<http://geo.org/places/CX http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
-'<http://geo.org/places/CX http://www.w3.org/2000/01/rdf-schema#label "Christmas Island" .>' +
-'<http://geo.org/places/CX http://schema.org/containedInPlace http://geo.org/places/Oceania .>' +
-'<http://geo.org/places/BM http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
-'<http://geo.org/places/BM http://www.w3.org/2000/01/rdf-schema#label "Bermuda" .>' +
-'<http://geo.org/places/BM http://schema.org/containedInPlace http://geo.org/places/NorthAmerica .>' +
-'<http://geo.org/places/AW http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
-'<http://geo.org/places/AW http://www.w3.org/2000/01/rdf-schema#label "Aruba" .>' +
-'<http://geo.org/places/AW http://schema.org/containedInPlace http://geo.org/places/NorthAmerica .>' +
-'<http://geo.org/places/SS http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
-'<http://geo.org/places/SS http://www.w3.org/2000/01/rdf-schema#label "South Sudan" .>' +
-'<http://geo.org/places/SS http://schema.org/containedInPlace http://geo.org/places/Africa .>' +
-'<http://geo.org/places/PG http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
-'<http://geo.org/places/PG http://www.w3.org/2000/01/rdf-schema#label "Papua New Guinea" .>' +
-'<http://geo.org/places/PG http://schema.org/containedInPlace http://geo.org/places/Oceania .>' +
-'<http://geo.org/places/NF http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
-'<http://geo.org/places/NF http://www.w3.org/2000/01/rdf-schema#label "Norfolk Island" .>' +
-'<http://geo.org/places/NF http://schema.org/containedInPlace http://geo.org/places/Oceania .>' +
-'<http://geo.org/places/MP http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
-'<http://geo.org/places/MP http://www.w3.org/2000/01/rdf-schema#label "Northern Mariana Islands" .>' +
-'<http://geo.org/places/MP http://schema.org/containedInPlace http://geo.org/places/Oceania .>' +
-'<http://geo.org/places/IN http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
-'<http://geo.org/places/IN http://www.w3.org/2000/01/rdf-schema#label "India" .>' +
-'<http://geo.org/places/IN http://schema.org/containedInPlace http://geo.org/places/Asia .>' +
-'<http://geo.org/places/GM http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
-'<http://geo.org/places/GM http://www.w3.org/2000/01/rdf-schema#label "Gambia" .>' +
-'<http://geo.org/places/GM http://schema.org/containedInPlace http://geo.org/places/Africa .>' +
-'<http://geo.org/places/CK http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
-'<http://geo.org/places/CK http://www.w3.org/2000/01/rdf-schema#label "Cook Islands" .>' +
-'<http://geo.org/places/CK http://schema.org/containedInPlace http://geo.org/places/Oceania .>' +
-'<http://geo.org/places/UG http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
-'<http://geo.org/places/UG http://www.w3.org/2000/01/rdf-schema#label "Uganda" .>' +
-'<http://geo.org/places/UG http://schema.org/containedInPlace http://geo.org/places/Africa .>' +
-'<http://geo.org/places/MX http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
-'<http://geo.org/places/MX http://www.w3.org/2000/01/rdf-schema#label "Mexico" .>' +
-'<http://geo.org/places/MX http://schema.org/containedInPlace http://geo.org/places/NorthAmerica .>' +
-'<http://geo.org/places/MC http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
-'<http://geo.org/places/MC http://www.w3.org/2000/01/rdf-schema#label "Monaco" .>' +
-'<http://geo.org/places/MC http://schema.org/containedInPlace http://geo.org/places/Europe .>' +
-'<http://geo.org/places/KW http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
-'<http://geo.org/places/KW http://www.w3.org/2000/01/rdf-schema#label "Kuwait" .>' +
-'<http://geo.org/places/KW http://schema.org/containedInPlace http://geo.org/places/Asia .>' +
-'<http://geo.org/places/HK http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
-'<http://geo.org/places/HK http://www.w3.org/2000/01/rdf-schema#label "Hong Kong" .>' +
-'<http://geo.org/places/HK http://schema.org/containedInPlace http://geo.org/places/Asia .>' +
-'<http://geo.org/places/GU http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
-'<http://geo.org/places/GU http://www.w3.org/2000/01/rdf-schema#label "Guam" .>' +
-'<http://geo.org/places/GU http://schema.org/containedInPlace http://geo.org/places/Oceania .>' +
-'<http://geo.org/places/FJ http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
-'<http://geo.org/places/FJ http://www.w3.org/2000/01/rdf-schema#label "Fiji" .>' +
-'<http://geo.org/places/FJ http://schema.org/containedInPlace http://geo.org/places/Oceania .>' +
-'<http://geo.org/places/ET http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
-'<http://geo.org/places/ET http://www.w3.org/2000/01/rdf-schema#label "Ethiopia" .>' +
-'<http://geo.org/places/ET http://schema.org/containedInPlace http://geo.org/places/Africa .>' +
-'<http://geo.org/places/VE http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
-'<http://geo.org/places/VE http://www.w3.org/2000/01/rdf-schema#label "Venezuela" .>' +
-'<http://geo.org/places/VE http://schema.org/containedInPlace http://geo.org/places/SouthAmerica .>' +
-'<http://geo.org/places/BH http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
-'<http://geo.org/places/BH http://www.w3.org/2000/01/rdf-schema#label "Bahrain" .>' +
-'<http://geo.org/places/BH http://schema.org/containedInPlace http://geo.org/places/Asia .>' +
-'<http://geo.org/places/AR http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
-'<http://geo.org/places/AR http://www.w3.org/2000/01/rdf-schema#label "Argentina" .>' +
-'<http://geo.org/places/AR http://schema.org/containedInPlace http://geo.org/places/SouthAmerica .>' +
-'<http://geo.org/places/TD http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
-'<http://geo.org/places/TD http://www.w3.org/2000/01/rdf-schema#label "Chad" .>' +
-'<http://geo.org/places/TD http://schema.org/containedInPlace http://geo.org/places/Africa .>' +
-'<http://geo.org/places/SN http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
-'<http://geo.org/places/SN http://www.w3.org/2000/01/rdf-schema#label "Senegal" .>' +
-'<http://geo.org/places/SN http://schema.org/containedInPlace http://geo.org/places/Africa .>' +
-'<http://geo.org/places/PW http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
-'<http://geo.org/places/PW http://www.w3.org/2000/01/rdf-schema#label "Palau" .>' +
-'<http://geo.org/places/PW http://schema.org/containedInPlace http://geo.org/places/Oceania .>' +
-'<http://geo.org/places/NA http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
-'<http://geo.org/places/NA http://www.w3.org/2000/01/rdf-schema#label "Namibia" .>' +
-'<http://geo.org/places/NA http://schema.org/containedInPlace http://geo.org/places/Africa .>' +
-'<http://geo.org/places/MK http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>';
+'<http://geo.org/places/HU http://www.w3.org/2000/01/rdf-schema#label "Hungary" .>' ;
+// '<http://geo.org/places/HU http://schema.org/containedInPlace http://geo.org/places/Europe .>' +
+// '<http://geo.org/places/CH http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
+// '<http://geo.org/places/CH http://www.w3.org/2000/01/rdf-schema#label "Switzerland" .>' +
+// '<http://geo.org/places/CH http://schema.org/containedInPlace http://geo.org/places/Europe .>' +
+// '<http://geo.org/places/BR http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
+// '<http://geo.org/places/BR http://www.w3.org/2000/01/rdf-schema#label "Brazil" .>' +
+// '<http://geo.org/places/BR http://schema.org/containedInPlace http://geo.org/places/SouthAmerica .>' +
+// '<http://geo.org/places/UY http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
+// '<http://geo.org/places/UY http://www.w3.org/2000/01/rdf-schema#label "Uruguay" .>' +
+// '<http://geo.org/places/UY http://schema.org/containedInPlace http://geo.org/places/SouthAmerica .>' +
+// '<http://geo.org/places/AG http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
+// '<http://geo.org/places/AG http://www.w3.org/2000/01/rdf-schema#label "Antigua and Barbuda" .>' +
+// '<http://geo.org/places/AG http://schema.org/containedInPlace http://geo.org/places/NorthAmerica .>' +
+// '<http://geo.org/places/TN http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
+// '<http://geo.org/places/TN http://www.w3.org/2000/01/rdf-schema#label "Tunisia" .>' +
+// '<http://geo.org/places/TN http://schema.org/containedInPlace http://geo.org/places/Africa .>' +
+// '<http://geo.org/places/SX http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
+// '<http://geo.org/places/SX http://www.w3.org/2000/01/rdf-schema#label "Sint Maarten" .>' +
+// '<http://geo.org/places/SX http://schema.org/containedInPlace http://geo.org/places/NorthAmerica .>' +
+// '<http://geo.org/places/SC http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
+// '<http://geo.org/places/SC http://www.w3.org/2000/01/rdf-schema#label "Seychelles" .>' +
+// '<http://geo.org/places/SC http://schema.org/containedInPlace http://geo.org/places/Africa .>' +
+// '<http://geo.org/places/PL http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
+// '<http://geo.org/places/PL http://www.w3.org/2000/01/rdf-schema#label "Poland" .>' +
+// '<http://geo.org/places/PL http://schema.org/containedInPlace http://geo.org/places/Europe .>' +
+// '<http://geo.org/places/MU http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
+// '<http://geo.org/places/MU http://www.w3.org/2000/01/rdf-schema#label "Mauritius" .>' +
+// '<http://geo.org/places/MU http://schema.org/containedInPlace http://geo.org/places/Africa .>' +
+// '<http://geo.org/places/IS http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
+// '<http://geo.org/places/IS http://www.w3.org/2000/01/rdf-schema#label "Iceland" .>' +
+// '<http://geo.org/places/IS http://schema.org/containedInPlace http://geo.org/places/Europe .>' +
+// '<http://geo.org/places/GR http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
+// '<http://geo.org/places/GR http://www.w3.org/2000/01/rdf-schema#label "Greece" .>' +
+// '<http://geo.org/places/GR http://schema.org/containedInPlace http://geo.org/places/Europe .>' +
+// '<http://geo.org/places/BZ http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
+// '<http://geo.org/places/BZ http://www.w3.org/2000/01/rdf-schema#label "Belize" .>' +
+// '<http://geo.org/places/BZ http://schema.org/containedInPlace http://geo.org/places/NorthAmerica .>' +
+// '<http://geo.org/places/BE http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
+// '<http://geo.org/places/BE http://www.w3.org/2000/01/rdf-schema#label "Belgium" .>' +
+// '<http://geo.org/places/BE http://schema.org/containedInPlace http://geo.org/places/Europe .>' +
+// '<http://geo.org/places/AO http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
+// '<http://geo.org/places/AO http://www.w3.org/2000/01/rdf-schema#label "Angola" .>' +
+// '<http://geo.org/places/AO http://schema.org/containedInPlace http://geo.org/places/Africa .>' +
+// '<http://geo.org/places/TV http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
+// '<http://geo.org/places/TV http://www.w3.org/2000/01/rdf-schema#label "Tuvalu" .>' +
+// '<http://geo.org/places/TV http://schema.org/containedInPlace http://geo.org/places/Oceania .>' +
+// '<http://geo.org/places/SK http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
+// '<http://geo.org/places/SK http://www.w3.org/2000/01/rdf-schema#label "Slovakia" .>' +
+// '<http://geo.org/places/SK http://schema.org/containedInPlace http://geo.org/places/Europe .>' +
+// '<http://geo.org/places/RU http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
+// '<http://geo.org/places/RU http://www.w3.org/2000/01/rdf-schema#label "Russia" .>' +
+// '<http://geo.org/places/RU http://schema.org/containedInPlace http://geo.org/places/Europe .>' +
+// '<http://geo.org/places/PT http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
+// '<http://geo.org/places/PT http://www.w3.org/2000/01/rdf-schema#label "Portugal" .>' +
+// '<http://geo.org/places/PT http://schema.org/containedInPlace http://geo.org/places/Europe .>' +
+// '<http://geo.org/places/MH http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
+// '<http://geo.org/places/MH http://www.w3.org/2000/01/rdf-schema#label "Marshall Islands" .>' +
+// '<http://geo.org/places/MH http://schema.org/containedInPlace http://geo.org/places/Oceania .>' +
+// '<http://geo.org/places/LR http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
+// '<http://geo.org/places/LR http://www.w3.org/2000/01/rdf-schema#label "Liberia" .>' +
+// '<http://geo.org/places/LR http://schema.org/containedInPlace http://geo.org/places/Africa .>' +
+// '<http://geo.org/places/KG http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
+// '<http://geo.org/places/KG http://www.w3.org/2000/01/rdf-schema#label "Kyrgyzstan" .>' +
+// '<http://geo.org/places/KG http://schema.org/containedInPlace http://geo.org/places/Asia .>' +
+// '<http://geo.org/places/GE http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
+// '<http://geo.org/places/GE http://www.w3.org/2000/01/rdf-schema#label "Georgia" .>' +
+// '<http://geo.org/places/GE http://schema.org/containedInPlace http://geo.org/places/Asia .>' +
+// '<http://geo.org/places/FO http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
+// '<http://geo.org/places/FO http://www.w3.org/2000/01/rdf-schema#label "Faroe Islands" .>' +
+// '<http://geo.org/places/FO http://schema.org/containedInPlace http://geo.org/places/Europe .>' +
+// '<http://geo.org/places/XK http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
+// '<http://geo.org/places/XK http://www.w3.org/2000/01/rdf-schema#label "Kosovo" .>' +
+// '<http://geo.org/places/XK http://schema.org/containedInPlace http://geo.org/places/Europe .>' +
+// '<http://geo.org/places/CX http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
+// '<http://geo.org/places/CX http://www.w3.org/2000/01/rdf-schema#label "Christmas Island" .>' +
+// '<http://geo.org/places/CX http://schema.org/containedInPlace http://geo.org/places/Oceania .>' +
+// '<http://geo.org/places/BM http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
+// '<http://geo.org/places/BM http://www.w3.org/2000/01/rdf-schema#label "Bermuda" .>' +
+// '<http://geo.org/places/BM http://schema.org/containedInPlace http://geo.org/places/NorthAmerica .>' +
+// '<http://geo.org/places/AW http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
+// '<http://geo.org/places/AW http://www.w3.org/2000/01/rdf-schema#label "Aruba" .>' +
+// '<http://geo.org/places/AW http://schema.org/containedInPlace http://geo.org/places/NorthAmerica .>' +
+// '<http://geo.org/places/SS http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
+// '<http://geo.org/places/SS http://www.w3.org/2000/01/rdf-schema#label "South Sudan" .>' +
+// '<http://geo.org/places/SS http://schema.org/containedInPlace http://geo.org/places/Africa .>' +
+// '<http://geo.org/places/PG http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
+// '<http://geo.org/places/PG http://www.w3.org/2000/01/rdf-schema#label "Papua New Guinea" .>' +
+// '<http://geo.org/places/PG http://schema.org/containedInPlace http://geo.org/places/Oceania .>' +
+// '<http://geo.org/places/NF http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
+// '<http://geo.org/places/NF http://www.w3.org/2000/01/rdf-schema#label "Norfolk Island" .>' +
+// '<http://geo.org/places/NF http://schema.org/containedInPlace http://geo.org/places/Oceania .>' +
+// '<http://geo.org/places/MP http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
+// '<http://geo.org/places/MP http://www.w3.org/2000/01/rdf-schema#label "Northern Mariana Islands" .>' +
+// '<http://geo.org/places/MP http://schema.org/containedInPlace http://geo.org/places/Oceania .>' +
+// '<http://geo.org/places/IN http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
+// '<http://geo.org/places/IN http://www.w3.org/2000/01/rdf-schema#label "India" .>' +
+// '<http://geo.org/places/IN http://schema.org/containedInPlace http://geo.org/places/Asia .>' +
+// '<http://geo.org/places/GM http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
+// '<http://geo.org/places/GM http://www.w3.org/2000/01/rdf-schema#label "Gambia" .>' +
+// '<http://geo.org/places/GM http://schema.org/containedInPlace http://geo.org/places/Africa .>' +
+// '<http://geo.org/places/CK http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
+// '<http://geo.org/places/CK http://www.w3.org/2000/01/rdf-schema#label "Cook Islands" .>' +
+// '<http://geo.org/places/CK http://schema.org/containedInPlace http://geo.org/places/Oceania .>' +
+// '<http://geo.org/places/UG http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
+// '<http://geo.org/places/UG http://www.w3.org/2000/01/rdf-schema#label "Uganda" .>' +
+// '<http://geo.org/places/UG http://schema.org/containedInPlace http://geo.org/places/Africa .>' +
+// '<http://geo.org/places/MX http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
+// '<http://geo.org/places/MX http://www.w3.org/2000/01/rdf-schema#label "Mexico" .>' +
+// '<http://geo.org/places/MX http://schema.org/containedInPlace http://geo.org/places/NorthAmerica .>' +
+// '<http://geo.org/places/MC http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
+// '<http://geo.org/places/MC http://www.w3.org/2000/01/rdf-schema#label "Monaco" .>' +
+// '<http://geo.org/places/MC http://schema.org/containedInPlace http://geo.org/places/Europe .>' +
+// '<http://geo.org/places/KW http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
+// '<http://geo.org/places/KW http://www.w3.org/2000/01/rdf-schema#label "Kuwait" .>' +
+// '<http://geo.org/places/KW http://schema.org/containedInPlace http://geo.org/places/Asia .>' +
+// '<http://geo.org/places/HK http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
+// '<http://geo.org/places/HK http://www.w3.org/2000/01/rdf-schema#label "Hong Kong" .>' +
+// '<http://geo.org/places/HK http://schema.org/containedInPlace http://geo.org/places/Asia .>' +
+// '<http://geo.org/places/GU http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
+// '<http://geo.org/places/GU http://www.w3.org/2000/01/rdf-schema#label "Guam" .>' +
+// '<http://geo.org/places/GU http://schema.org/containedInPlace http://geo.org/places/Oceania .>' +
+// '<http://geo.org/places/FJ http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
+// '<http://geo.org/places/FJ http://www.w3.org/2000/01/rdf-schema#label "Fiji" .>' +
+// '<http://geo.org/places/FJ http://schema.org/containedInPlace http://geo.org/places/Oceania .>' +
+// '<http://geo.org/places/ET http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
+// '<http://geo.org/places/ET http://www.w3.org/2000/01/rdf-schema#label "Ethiopia" .>' +
+// '<http://geo.org/places/ET http://schema.org/containedInPlace http://geo.org/places/Africa .>' +
+// '<http://geo.org/places/VE http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
+// '<http://geo.org/places/VE http://www.w3.org/2000/01/rdf-schema#label "Venezuela" .>' +
+// '<http://geo.org/places/VE http://schema.org/containedInPlace http://geo.org/places/SouthAmerica .>' +
+// '<http://geo.org/places/BH http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
+// '<http://geo.org/places/BH http://www.w3.org/2000/01/rdf-schema#label "Bahrain" .>' +
+// '<http://geo.org/places/BH http://schema.org/containedInPlace http://geo.org/places/Asia .>' +
+// '<http://geo.org/places/AR http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
+// '<http://geo.org/places/AR http://www.w3.org/2000/01/rdf-schema#label "Argentina" .>' +
+// '<http://geo.org/places/AR http://schema.org/containedInPlace http://geo.org/places/SouthAmerica .>' +
+// '<http://geo.org/places/TD http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
+// '<http://geo.org/places/TD http://www.w3.org/2000/01/rdf-schema#label "Chad" .>' +
+// '<http://geo.org/places/TD http://schema.org/containedInPlace http://geo.org/places/Africa .>' +
+// '<http://geo.org/places/SN http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
+// '<http://geo.org/places/SN http://www.w3.org/2000/01/rdf-schema#label "Senegal" .>' +
+// '<http://geo.org/places/SN http://schema.org/containedInPlace http://geo.org/places/Africa .>' +
+// '<http://geo.org/places/PW http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
+// '<http://geo.org/places/PW http://www.w3.org/2000/01/rdf-schema#label "Palau" .>' +
+// '<http://geo.org/places/PW http://schema.org/containedInPlace http://geo.org/places/Oceania .>' +
+// '<http://geo.org/places/NA http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +
+// '<http://geo.org/places/NA http://www.w3.org/2000/01/rdf-schema#label "Namibia" .>' +
+// '<http://geo.org/places/NA http://schema.org/containedInPlace http://geo.org/places/Africa .>' +
+// '<http://geo.org/places/MK http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>'+
 // '<http://geo.org/places/MK http://www.w3.org/2000/01/rdf-schema#label "Macedonia" .>' +
 // '<http://geo.org/places/MK http://schema.org/containedInPlace http://geo.org/places/Europe .>' +
 // '<http://geo.org/places/LU http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Country .>' +

@@ -6,7 +6,7 @@ App = {
   ilosc: 0,
   num_of_graphs: 0,
   num_of_triplets: 0,
-  address: "0x225Cf3e2110A9C096e8d724cD3a80CDb2000603b",
+  address: "0x446e083592D2dFa6661E20097F6898990C3CACE5",
   abi:  [
     {
       "inputs": [],

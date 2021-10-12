@@ -18,11 +18,9 @@
  *
  */
 
-// const HDWalletProvider = require('@truffle/hdwallet-provider');
-// const infuraKey = "fj4jll3k.....";
-//
-// const fs = require('fs');
-// const mnemonic = fs.readFileSync(".secret").toString().trim();
+ const PrivateKeyProvider = require("@truffle/hdwallet-provider");
+ const privateKey = "0xae6ae8e5ccbfb04590405997ee2d52d2b330726137b875053c36d94e974d162f";
+ const privateKeyProvider = new PrivateKeyProvider(privateKey, "http://localhost:8545");
 
 module.exports = {
   /**
@@ -40,6 +38,10 @@ module.exports = {
       host: '127.0.0.1',
       port: 7545,
       network_id: '*'
+    },
+    besuWallet: {
+      provider: privateKeyProvider,
+      network_id: "*"
     }
     // Useful for testing. The `development` name is special - truffle uses it by default
     // if it's defined here and no other network is specified at the command line.

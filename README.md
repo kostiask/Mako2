@@ -81,7 +81,7 @@ npm install
 ```js
 web3 = new Web3(new Web3.providers.WebsocketProvider('<blockchain-websocket>'));
 ```
-10. In [index.js](https://github.com/kostiask/Mako2/blob/ba130171d9b289831d5abf177dad010e3ba3a1ad/js_Oracle/index.js#L5) put private account key for signing transactions:
+10. In [index.js](https://github.com/kostiask/Mako2/blob/ba130171d9b289831d5abf177dad010e3ba3a1ad/js_Oracle/index.js#L5) put private account key(0x.....) for signing transactions:
 ```js
 const privateKey = "<private-key-account>";
 ```

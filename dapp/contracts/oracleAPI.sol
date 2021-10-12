@@ -8,7 +8,7 @@ abstract contract IOracle{
 
 contract OracleAPI{
 
-    address OracleAddress = 0xb9A219631Aed55eBC3D998f17C3840B7eC39C0cc;
+    address OracleAddress = <address-Oracle-contract>;
 
     IOracle oracle = IOracle(OracleAddress);
 

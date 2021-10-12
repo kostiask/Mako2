@@ -2,7 +2,7 @@ import Web3 from "web3";
 import Net from "net";
 import request from "request";
 
-const privateKey = "0xae6ae8e5ccbfb04590405997ee2d52d2b330726137b875053c36d94e974d162f";
+const privateKey = "<private-key-account>";
 
 const abi = [
     {
@@ -97,7 +97,7 @@ const abi = [
     }
   ];
 
-const addressOracle = "0xb9A219631Aed55eBC3D998f17C3840B7eC39C0cc";
+const addressOracle = "<address-Oracle-contract>";
 
 var server = Net.createServer().listen();
 var web3;
@@ -144,7 +144,7 @@ function initContract(){
 
 function initWeb3(){
     print("Web3 initialization");
-    web3 = new Web3(new Web3.providers.WebsocketProvider('ws://localhost:8546'));
+    web3 = new Web3(new Web3.providers.WebsocketProvider('<blockchain-websocket>'));
     print("WebSocket - " + web3.currentProvider.url);
 }
 

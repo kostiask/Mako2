@@ -6,7 +6,7 @@ App = {
   ilosc: 0,
   num_of_graphs: 0,
   num_of_triplets: 0,
-  address: "0x446e083592D2dFa6661E20097F6898990C3CACE5",
+  address: "<smart-contract-RDF-address>",
   abi:  [
     {
       "inputs": [],

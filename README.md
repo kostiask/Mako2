@@ -58,8 +58,9 @@ If you using Besu:
 ```bash
 truffle migrate --network besuWallet
 ```
-![GitHub Logo](/img/Снимок экрана-20211012134429-811x292.png)
-Format: ![Alt Text](url)
+In Metamask connect to proper blockchain network.
+![alt text](https://github.com/kostiask/Mako2/blob/master/img/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0-20211012134429-811x292.png?raw=true) 
+
 ### js_Oracle application
 1. Go to js_Oracle directory: 
 ```bash

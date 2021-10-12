@@ -119,7 +119,7 @@ address: "<smart-contract-RDF-address>",
 ```
 18. From root directory, go to the directory [server](https://github.com/kostiask/Mako2/tree/master/server):
 ```bash
-cd server
+cd ../server
 ```
 19. Start server, which will return the graph:
 ```bash

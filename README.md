@@ -13,7 +13,7 @@ Clone the repository to the user's home directory and go to the project director
 cd "${HOME}" && git clone https://github.com/kostiask/Mako2.git && cd Mako2
 ```
 
-## Smart contract Oracle deploy
+## Instruction
 1. Go to directory Oracle: 
 ```bash
 cd Oracle
@@ -46,15 +46,20 @@ const PrivateKeyProvider = require("@truffle/hdwallet-provider");
 const privateKey = "<account-private-key>";
 const privateKeyProvider = new PrivateKeyProvider(privateKey, "<JSON-RPC-http-endpoint>");
 ```
-3. Compile Smart Contract: 
+4. Compile Smart Contract: 
 ```bash
 truffle compile
 ```
-4. Deploy Smart Contract:
+5. Deploy Smart Contract:
 ```bash
 truffle migrate
 ```
-
+If you using Besu: 
+```bash
+truffle migrate --network besuWallet
+```
+![GitHub Logo](/img/Снимок экрана-20211012134429-811x292.png)
+Format: ![Alt Text](url)
 ### js_Oracle application
 1. Go to js_Oracle directory: 
 ```bash

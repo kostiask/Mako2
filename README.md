@@ -39,6 +39,7 @@ npm install --save @truffle/hdwallet-provider
 To add the wallet provider, update the [truffle-config.js](https://github.com/kostiask/Mako2/blob/b5079509fed42840f3987b1477ad849ec321106c/Oracle/truffle-config.js#L22) file in the project directory. Replace:
 * <JSON-RPC-http-endpoint> with the JSON-RPC endpoint (IP address and port) of a Besu node.
 * <account-private-key> with the private key of an Ethereum account containing Ether.
+
 ```js
 const PrivateKeyProvider = require("@truffle/hdwallet-provider");
 const privateKey = "<account-private-key>";

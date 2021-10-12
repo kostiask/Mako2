@@ -18,7 +18,12 @@ cd "${HOME}" && git clone https://github.com/kostiask/Mako2.git && cd Mako2
 ```bash
 cd Oracle
 ```
-2. Into [truffle-config.js](https://github.com/kostiask/Mako2/blob/b5079509fed42840f3987b1477ad849ec321106c/Oracle/truffle-config.js#L36) put blockchain and account data:
+2. Install modulle:
+```bash
+npm install
+```
+
+3. Into [truffle-config.js](https://github.com/kostiask/Mako2/blob/b5079509fed42840f3987b1477ad849ec321106c/Oracle/truffle-config.js#L36) put blockchain and account data:
 ```js
 development: {
       host: '<host blockchain>',
@@ -27,6 +32,15 @@ development: {
       from: <address account>
     }
 ```
+####Jezeli wykozestujecie clijenta Besu.
+Besu does not support private key management. To use Besu with Truffle, you must configure a Truffle wallet.
+To install a Truffle wallet:
+```bash
+npm install --save @truffle/hdwallet-provider
+```
+To add the wallet provider, update the truffle-config.js file in the project directory. Replace:
+*<JSON-RPC-http-endpoint> with the JSON-RPC endpoint (IP address and port) of a Besu node.
+*<account-private-key> with the private key of an Ethereum account containing Ether.
 3. Compile Smart Contract: 
 ```bash
 truffle compile

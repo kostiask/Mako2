@@ -113,33 +113,26 @@ truffle migrate --network besuWallet
 ```
 Po wykonaniu polecenia w terminale pojawi sie address nowego contractu Oraclu:
 ![alt text](https://github.com/kostiask/Mako2/blob/master/img/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0-20211012134429-811x292.png?raw=true) 
-### Simple server which return graph
-1. Go to server directory:
+17. Smart contract sddress of point 16 of the instruction must be inserted into the file [dapp/client/src/app.js](https://github.com/kostiask/Mako2/blob/0bf20725b176d49ee7f1de1e6638effce14e23a2/dapp/client/src/app.js#L9):
+```js
+address: "<smart-contract-RDF-address>",
+```
+18. From root directory, go to the directory [server](https://github.com/kostiask/Mako2/tree/master/server):
 ```bash
 cd server
 ```
-2. Start server:
+19. Start server, which will return the graph:
 ```bash
 node server.js
 ```
-
-### Client application
-1. Go to dapp/client/src directory:
+20. In a new terminal window, from the root directory, go to the directory [dapp/client](https://github.com/kostiask/Mako2/tree/master/dapp/client)
 ```bash
-cd dapp/client/src
+cd dapp/client
 ```
-2. Install module:
+21. Install module:
 ```bash
 npm install
 ```
-3. Open app.js file and add RDF SC address:
-```js
-const rdf = new web3.eth.Contract(
-      data.abi,
-      "<address RDF contract>"
-      );
-```
-4. Go to dapp/client directory.
 5. Start app: 
 ```bash
 npm run dev

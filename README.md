@@ -59,7 +59,7 @@ If you using Besu:
 truffle migrate --network besuWallet
 ```
 Po wykonaniu polecenia w terminale pojawi sie address nowego contractu Oraclu:
-![alt text](https://github.com/kostiask/Mako2/blob/master/img/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0-20211012134429-811x292.png?raw=true) 
+![alt text](https://github.com/kostiask/Mako2/blob/master/img/1.png?raw=true) 
 
 6. Address z punktu 5 trzebo umiescic w pliku [js_Oracle/index.js](https://github.com/kostiask/Mako2/blob/ba130171d9b289831d5abf177dad010e3ba3a1ad/js_Oracle/index.js#L100):
 ```js
@@ -112,7 +112,7 @@ If you using Besu:
 truffle migrate --network besuWallet
 ```
 Po wykonaniu polecenia w terminale pojawi sie address nowego contractu Oraclu:
-![alt text](https://github.com/kostiask/Mako2/blob/master/img/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0-20211012134429-811x292.png?raw=true) 
+![alt text](https://github.com/kostiask/Mako2/blob/master/img/2.png?raw=true) 
 17. Smart contract sddress of point 16 of the instruction must be inserted into the file [dapp/client/src/app.js](https://github.com/kostiask/Mako2/blob/0bf20725b176d49ee7f1de1e6638effce14e23a2/dapp/client/src/app.js#L9):
 ```js
 address: "<smart-contract-RDF-address>",

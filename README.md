@@ -89,7 +89,7 @@ const privateKey = "<private-key-account>";
 ```bash
 node index.js
 ```
-12. Go to dapp directory in a new terminal window:
+12. In the new terminal window, go from the main directory to the [dapp](https://github.com/kostiask/Mako2/tree/master/dapp) directory 
 ```bash
 cd dapp
 ```

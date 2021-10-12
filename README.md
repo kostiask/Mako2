@@ -18,7 +18,7 @@ cd "${HOME}" && git clone https://github.com/kostiask/Mako2.git && cd Mako2
 ```bash
 cd Oracle
 ```
-2. Into Truffle-config.js put blockchain and account data:
+2. Into [truffle-config.js](https://github.com/kostiask/Mako2/blob/b5079509fed42840f3987b1477ad849ec321106c/Oracle/truffle-config.js#L36) put blockchain and account data:
 ```js
 development: {
       host: '<host blockchain>',

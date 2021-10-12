@@ -201,10 +201,6 @@ App = {
     else if (window.web3) {
       App.web3Provider = window.web3.currentProvider;
     }
-    // If no injected web3 instance is detected, fall back to Ganache
-    else {
-      App.web3Provider = new Web3.providers.HttpProvider('http://localhost:7545');
-    }
     web3 = new Web3(App.web3Provider);
 
     return App.initContract();

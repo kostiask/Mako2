@@ -71,7 +71,7 @@ address OracleAddress = <address-Oracle-contract>;
 ```
 7. Go to directory js_Oracle:
 ```bash
-cd Oracle
+cd ../js_Oracle
 ```
 8. Install module:
 ```bash

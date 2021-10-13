@@ -13,7 +13,7 @@ In the blockchain that you are using, you need to enable websocket. If you are u
 ```bash
 cd "${HOME}" && git clone https://github.com/kostiask/Mako2.git && cd Mako2
 ```
-2. Go to directory Oracle: 
+2. Go to directory [Oracle](https://github.com/kostiask/Mako2/tree/master/Oracle): 
 ```bash
 cd Oracle
 ```
@@ -68,7 +68,7 @@ and in the [dapp/contracts/oracleAPI.sol](https://github.com/kostiask/Mako2/blob
 ```sol
 address OracleAddress = <address-Oracle-contract>;
 ```
-8. Go to directory js_Oracle:
+8. Go to directory [js_Oracle](https://github.com/kostiask/Mako2/tree/master/js_Oracle):
 ```bash
 cd ../js_Oracle
 ```
@@ -80,7 +80,7 @@ npm install
 ```js
 web3 = new Web3(new Web3.providers.WebsocketProvider('<blockchain-websocket>'));
 ```
-11. In [index.js](https://github.com/kostiask/Mako2/blob/ba130171d9b289831d5abf177dad010e3ba3a1ad/js_Oracle/index.js#L5) put private account key(0x.....) for signing transactions:
+11. In [index.js](https://github.com/kostiask/Mako2/blob/ba130171d9b289831d5abf177dad010e3ba3a1ad/js_Oracle/index.js#L5) put private account key(0x.....) on which there is ether for signing transactions:
 ```js
 const privateKey = "<private-key-account>";
 ```
@@ -138,5 +138,5 @@ npm install
 npm run dev
 ```
 ### Metamask
-1. In Metamask connect to proper blockchain network.
+1. In Metamask connect to your blockchain network.
 ![alt text](https://www.trufflesuite.com/img/tutorials/pet-shop/metamask-networkmenu.png) 

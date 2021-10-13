@@ -7,7 +7,7 @@
 
 In the blockchain that you are using, you need to enable websocket. If you are using the [Hyperledger Besu](https://besu.hyperledger.org/en/stable/) client, you can find instructions [here](https://besu.hyperledger.org/en/stable/Reference/CLI/CLI-Syntax/)
 
-## Instruction
+## Instructions
 
 1. Clone the repository to the user's home directory and go to the project directory:
 ```bash
@@ -57,14 +57,14 @@ If you using Besu:
 ```bash
 truffle migrate --network besuWallet
 ```
-Po wykonaniu polecenia w terminale pojawi sie address nowego contractu Oraclu:
+After executing the command from point 6 of the instruction, the terminal will display the address of the new Oracle smart contract:
 ![alt text](https://github.com/kostiask/Mako2/blob/master/img/1.png?raw=true) 
 
-7. Address z punktu 5 trzebo umiescic w pliku [js_Oracle/index.js](https://github.com/kostiask/Mako2/blob/ba130171d9b289831d5abf177dad010e3ba3a1ad/js_Oracle/index.js#L100):
+7. The address of the smart contract Oracle from point 6 of the instruction must be placed in the [js_Oracle/index.js](https://github.com/kostiask/Mako2/blob/ba130171d9b289831d5abf177dad010e3ba3a1ad/js_Oracle/index.js#L100) file:
 ```js
 const addressOracle = "<address-Oracle-contract>";
 ```
-i w pliku [dapp/contracts/oracleAPI.sol](https://github.com/kostiask/Mako2/blob/ba130171d9b289831d5abf177dad010e3ba3a1ad/dapp/contracts/oracleAPI.sol#L11):
+and in the [dapp/contracts/oracleAPI.sol](https://github.com/kostiask/Mako2/blob/ba130171d9b289831d5abf177dad010e3ba3a1ad/dapp/contracts/oracleAPI.sol#L11) file:
 ```sol
 address OracleAddress = <address-Oracle-contract>;
 ```
@@ -110,9 +110,10 @@ If you using Besu:
 ```bash
 truffle migrate --network besuWallet
 ```
-Po wykonaniu polecenia w terminale pojawi sie address nowego contractu Oraclu:
+
+After executing the command from point 17 of the instruction, the terminal will display the address of the new RDF smart contract:
 ![alt text](https://github.com/kostiask/Mako2/blob/master/img/2.png?raw=true) 
-18. Smart contract sddress of point 16 of the instruction must be inserted into the file [dapp/client/src/app.js](https://github.com/kostiask/Mako2/blob/0bf20725b176d49ee7f1de1e6638effce14e23a2/dapp/client/src/app.js#L9):
+18. The address of the smart contract RDF from point 17 of the instruction must be placed in the [dapp/client/src/app.js](https://github.com/kostiask/Mako2/blob/0bf20725b176d49ee7f1de1e6638effce14e23a2/dapp/client/src/app.js#L9) file:
 ```js
 address: "<smart-contract-RDF-address>",
 ```

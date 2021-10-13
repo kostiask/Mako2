@@ -17,7 +17,7 @@ cd "${HOME}" && git clone https://github.com/kostiask/Mako2.git && cd Mako2
 ```bash
 cd Oracle
 ```
-3. Install modulle:
+3. Install modules:
 ```bash
 npm install
 ```
@@ -72,7 +72,7 @@ address OracleAddress = <address-Oracle-contract>;
 ```bash
 cd ../js_Oracle
 ```
-9. Install module:
+9. Install modules:
 ```bash
 npm install
 ```
@@ -92,7 +92,7 @@ node index.js
 ```bash
 cd dapp
 ```
-14. Install module:
+14. Install modules:
 ```bash
 npm install
 ```
